@@ -1,0 +1,66 @@
+c:\users\raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\bin\Debug\Hastane 613.exe.config
+c:\users\raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane_613.Resources.resources
+c:\users\raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane 613.vbproj.GenerateResource.Cache
+c:\users\raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane 613.xml
+c:\users\raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\bin\Debug\Hastane 613.exe
+c:\users\raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\bin\Debug\Hastane 613.pdb
+c:\users\raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\bin\Debug\Hastane 613.xml
+c:\users\raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane 613.exe
+c:\users\raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane 613.pdb
+c:\users\raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane 613.vbprojResolveAssemblyReference.cache
+c:\users\raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane_613.frmLoadingScreen.resources
+C:\Users\Raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane_613.frmHome.resources
+C:\Users\Raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane_613.frmSignIn.resources
+C:\Users\Raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane_613.frmCambio.resources
+C:\Users\Raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane_613.frmDirGen.resources
+C:\Users\Raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane_613.frmFarmacia.resources
+C:\Users\Raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane_613.frmRecep.resources
+C:\Users\Raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane_613.frmVentPago.resources
+C:\Users\Raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane_613.frmEmpleados.resources
+C:\Users\Raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane_613.frmPacientes.resources
+C:\Users\Raúl\documents\visual studio 2015\Projects\Hastane 613\Hastane 613\obj\Debug\Hastane_613.frmSecciones.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\bin\Debug\Hastane 613.exe.config
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane 613.exe
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane 613.xml
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane 613.pdb
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\bin\Debug\Hastane.mdb
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\bin\Debug\Hastane 613.exe
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\bin\Debug\Hastane 613.pdb
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\bin\Debug\Hastane 613.xml
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane 613.vbprojResolveAssemblyReference.cache
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane_613.frmCambio.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane_613.frmDirGen.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane_613.frmEmpleados.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane_613.frmPacientes.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane_613.frmFarmacia.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane_613.frmLoadingScreen.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane_613.frmHome.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane_613.frmSignIn.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane_613.Resources.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane_613.frmRecep.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane_613.frmSecciones.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane_613.frmVentPago.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane 613.vbproj.GenerateResource.Cache
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.1\Hastane 613\obj\Debug\Hastane_613.frmClave.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\bin\Debug\Hastane 613.exe.config
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane 613.exe
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane 613.xml
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane 613.pdb
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\bin\Debug\Hastane 613.exe
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\bin\Debug\Hastane 613.pdb
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\bin\Debug\Hastane 613.xml
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane 613.vbprojResolveAssemblyReference.cache
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane_613.frmCambio.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane_613.frmClave.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane_613.frmDirGen.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane_613.frmEmpleados.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane_613.frmPacientes.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane_613.frmFarmacia.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane_613.frmLoadingScreen.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane_613.frmHome.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane_613.frmSignIn.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane_613.Resources.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane_613.frmRecep.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane_613.frmSecciones.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane_613.frmVentPago.resources
+C:\Users\Raúl\Documents\Visual Studio 2015\Projects\Hastane 1.2\Hastane 613\obj\Debug\Hastane 613.vbproj.GenerateResource.Cache
