@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!-- Formulario de franquicias -->
+    <section class="w-full bg-white text-gris-900 px-4 md:px-10 py-10 md:py-16">
+        <div class="h-auto max-w-screen-2xl mx-auto grid gap-5 md:gap-10 lg:grid-cols-2 lg:gap-7">
+            <div class="flex flex-col gap-4 lg:max-w-xl md:gap-5 lg:col-span-1">
+                <h2 class="font-extrabold leading-minimum text-3xl md:text-5xl text-gris-900">Comienza tu mejor inversión</h2>
+                <p class="font-serif md:text-xl">Envía tus datos por medio del formulario y a la brevedad el equipo Eunoia Live te estará contactando.</p>
+            </div>
+            
+            <form class="grid gap-3 md:grid-cols-2 md:gap-4 lg:col-span-1">
+                <input class="w-full p-3.5 rounded-lg font-serif text-sm text-gris-900 bg-gris-50 md:text-base md:p-4 md:col-span-1" placeholder="Nombre completo..." type="text" id="nombre" name="nombre" required>
+                <input class="w-full p-3.5 rounded-lg font-serif text-sm text-gris-900 bg-gris-50 md:text-base md:p-4 md:col-span-1" placeholder="Correo..." type="email" id="correo" name="correo" required>
+                <input class="w-full p-3.5 rounded-lg font-serif text-sm text-gris-900 bg-gris-50 md:text-base md:p-4 md:col-span-1" placeholder="Teléfono..." type="tel" id="telefono" name="telefono" required>
+                <select onclick="colorLocalidad()" class="w-full p-3.5 rounded-lg font-serif text-sm text-gray-400 bg-gris-50 md:text-base md:p-4 md:col-span-1" id="localidad" name="localidad" required>
+                    <option value="" selected disabled hidden>Localidad para franquicia...</option><option value="Aguascalientes">Aguascalientes</option><option value="Baja California">Baja California</option><option value="Baja California Sur">Baja California Sur</option><option value="Campeche">Campeche</option><option value="Chiapas">Chiapas</option><option value="Chihuahua">Chihuahua</option><option value="Ciudad de México">Ciudad de México</option><option value="Coahuila">Coahuila</option><option value="Colima">Colima</option><option value="Durango">Durango</option><option value="Estado de México">Estado de México</option><option value="Guanajuato">Guanajuato</option><option value="Guerrero">Guerrero</option><option value="Hidalgo">Hidalgo</option><option value="Jalisco">Jalisco</option><option value="Michoacán">Michoacán</option><option value="Morelos">Morelos</option><option value="Nayarit">Nayarit</option><option value="Nuevo León">Nuevo León</option><option value="Oaxaca">Oaxaca</option><option value="Puebla">Puebla</option><option value="Querétaro">Querétaro</option><option value="Quintana Roo">Quintana Roo</option><option value="San Luis Potosí">San Luis Potosí</option><option value="Sinaloa">Sinaloa</option><option value="Sonora">Sonora</option><option value="Tabasco">Tabasco</option><option value="Tamaulipas">Tamaulipas</option><option value="Tlaxcala">Tlaxcala</option><option value="Veracruz">Veracruz</option><option value="Yucatán">Yucatán</option><option value="Zacatecas">Zacatecas</option>
+                </select>
+                <textarea class="w-full p-3.5 rounded-lg font-serif text-sm text-gris-900 bg-gris-50 md:text-base md:p-4 md:col-span-2" rows="4" placeholder="Escribe tu mensaje..." type="text" id="mensaje" name="mensaje" required></textarea>
+                <input type="submit" value="Enviar" class="block w-fit rounded-full mx-auto border-2 border-rosa-500 bg-transparent text-center font-semibold text-rosa-500 justify-self-center-start px-10 py-4 leading-none text-sm md:justify-self md:text-base md:col-span-2 hover:bg-rosa-500 hover:text-white">
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function colorLocalidad(){
+            if(!document.getElementById("localidad").value){
+            document.getElementById("localidad").classList.add('text-gris-900');
+            document.getElementById("localidad").classList.remove('text-gray-400');
+            }
+        }
+    </script>
+</body>
+
+</html>

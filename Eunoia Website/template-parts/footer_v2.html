@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
+    <style>
+        .enlace-redes:hover .circulo-redes{
+            fill: #FE3799;
+            stroke: #FE3799;
+        }
+
+        .panel {
+                max-height: fit-content;
+            }
+
+        @media only screen and (min-width: 1024px) {
+            .footer-columnas{
+                grid-template-columns: repeat(2, minmax(0, auto));
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .accordion:after {
+                content: '\002B';
+                color: #fff;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+
+            .active:after {
+                content: "\2212";
+            }
+
+            .panel {
+                max-height: 0;
+                transition: max-height 0.2s ease-out;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer class="w-full bg-gris-700 text-white">
+        <div class="px-6 py-10 lg:px-10 lg:py-16">
+            <!-- Contenido del footer -->
+            <div class="h-auto max-w-screen-2xl mx-auto grid gap-5">
+                <div class="footer-columnas flex flex-col gap-10 items-center md:items-start lg:grid lg:gap-6 xl:gap-8">
+                    <a href="https://www.eunoia.live"><svg class="h-8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1710.84 303.29"><defs><style>.cls-1-f { fill: #fff;} .cls-2-f { fill: url(#linear-gradient);} .cls-3-f {fill: url(#linear-gradient-2);}</style><linearGradient id="linear-gradient" x1="2399.06" y1="-1657.62" x2="2661.72" y2="-1505.98" gradientTransform="translate(2749.26 -1354.33) rotate(180)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4a25aa" /><stop offset="1" stop-color="#e10098" /></linearGradient><linearGradient id="linear-gradient-2" x1="2399.06" y1="-1657.62" x2="2661.72" y2="-1505.98" xlink:href="#linear-gradient" /></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1-f" d="M562.72,260.76c-3.18,7.17-8,18.31-9.16,20.7-2,3.58-6.37,7.56-15.53,7.56H474.34V18.32a8.71,8.71,0,0,1,8.76-8h74.44L548,31.06c-1.59,3.58-6,8-15.13,8H509.77A6.48,6.48,0,0,0,503,45.79v82.8h43c-3.18,7.17-8,18.71-9.16,21.1-2,3.58-6,7.56-15.13,7.56H509.76A7,7,0,0,0,503,164v96.73h59.73Z" /><path class="cls-1-f" d="M791.23,256.38c0,19.11-15.52,33.44-34.23,33.84v.4H735.11c-19.51,0-35.43-14.73-35.43-34.24V18.32a8.62,8.62,0,0,1,8.36-8h20.31V251.2a14.79,14.79,0,0,0,14.73,15.13h4.38a15.12,15.12,0,0,0,15.13-15.13V10.36h28.66v246Z" /><path class="cls-1-f" d="M1017,289c-15.53,0-17.91-12.34-19.11-17.91L967.19,133.37V289H938.53V10.36h13.14c15.92,0,18.71,7.56,20.3,15.52l29.46,144.91V10.36h28.66V289Z" /><path class="cls-1-f" d="M1234.71,7.58c19.11.8,34.63,16.32,34.63,35.43V256.78a35.82,35.82,0,0,1-34.63,35h-21.89a36,36,0,0,1-35.83-35V43a35.59,35.59,0,0,1,35.83-35.43Zm-9.55,259.15a15.21,15.21,0,0,0,15.13-15.52v-203a15.21,15.21,0,0,0-15.13-15.52h-4.38a15.74,15.74,0,0,0-15.13,15.52v203a15.72,15.72,0,0,0,15.13,15.52Z" /><path class="cls-1-f"d="M1444.91,10.36c8.36,0,11.54,6.37,11.54,11.14V289h-20.3c-6.77,0-8-4-8.36-6V10.36Z" /><path class="cls-1-f"d="M1710.84,289H1679.4L1654.31,97.14,1629.23,289h-31.45L1640,10.36h15.53c11.94,0,13.93,7.56,15.13,15.13Z" /><polygon class="cls-2-f" points="350.2 303.29 189.64 303.29 269.92 164.24 350.2 303.29" /><polygon class="cls-3-f" points="175.1 0 253.34 135.52 156.47 303.29 0 303.29 175.1 0" /></g></g></svg></a>
+
+                    <!-- Newsletter -->
+                    <div class="flex flex-col gap-4 items-center md:w-4/6 md:items-start lg:w-96 lg:col-start-1">
+                        <p class="w-fit font-semibold xl:text-xl">Suscríbete a nuestro newsletter</p>
+                        <!-- Begin Mailchimp Signup Form -->
+                        <div id="mc_embed_signup" class="w-full">
+                            <form action="https://fairplayconsulting.us1.list-manage.com/subscribe/post?u=804a989ef57bc7f4ba3fb37dc&amp;id=aee4ca1a6b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll" class="flex gap-4">
+                                    <div class="w-full mc-field-group">
+                                        <label class="hidden" for="mce-EMAIL">Email Address </label>
+                                        <input class="required email appearance-none w-full p-3 font-serif text-base rounded-lg bg-gris-600 text-white placeholder-gris-400 focus:outline-none" type="email" value="" name="EMAIL" placeholder="Correo" id="mce-EMAIL">
+                                    </div>
+
+                                    <div id="mce-responses" class="hidden clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>
+
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_804a989ef57bc7f4ba3fb37dc_aee4ca1a6b" tabindex="-1" value=""></div>
+                                    <div class="clear"><input class="w-full px-6 py-3 rounded-full cursor-pointer bg-transparent border-2 border-white font-sans text-white text-sm font-semibold hover:bg-rosa-500 hover:border-rosa-500" type="submit" value="Enviar" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--End mc_embed_signup-->
+
+                        <p class="w-fit font-serif text-xs text-gris-200 xl:text-sm">Para informarte sobre el uso de la información personal dentro del sitio, lee nuestra <a href="/politica-privacidad" class="underline hover:text-white">Politica de Privacidad</a>.</p>
+                    </div>
+
+                    <!-- Redes Sociales -->
+                    <div class="flex gap-4 md:self-center lg:self-start lg:col-start-1">
+                        <!-- Instagram -->
+                        <a href="http://www.instagram.com/eunoia.live"><svg id="Component_296_31" class="enlace-redes w-8" data-name="Component 296 – 31" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                            <g id="Ellipse_219" class="circulo-redes" data-name="Ellipse 219" fill="none" stroke="#fff" stroke-width="2">
+                            <circle cx="18" cy="18" r="18" stroke="none"/>
+                            <circle cx="18" cy="18" r="17" fill="none"/>
+                            </g>
+                            <g id="_1161953_instagram_icon_2_" data-name="1161953_instagram_icon (2)" transform="translate(7.714 7.714)">
+                            <path id="Path_3776" data-name="Path 3776" d="M20.709,16.7a5.309,5.309,0,1,0,5.309,5.309A5.319,5.319,0,0,0,20.709,16.7Zm0,8.71a3.4,3.4,0,1,1,3.4-3.4A3.416,3.416,0,0,1,20.709,25.41Z" transform="translate(-10.423 -11.765)" fill="#fff"/>
+                            <circle id="Ellipse_218" data-name="Ellipse 218" cx="1.203" cy="1.203" r="1.203" transform="translate(14.599 3.608)" fill="#fff"/>
+                            <path id="Path_3777" data-name="Path 3777" d="M22.312,6.5a5.907,5.907,0,0,0-4.355-1.7H9.414A5.682,5.682,0,0,0,3.4,10.814v8.5a5.968,5.968,0,0,0,1.742,4.438,6.053,6.053,0,0,0,4.313,1.618h8.461a6.124,6.124,0,0,0,4.355-1.618,5.938,5.938,0,0,0,1.7-4.4V10.814A5.946,5.946,0,0,0,22.312,6.5Zm-.166,12.857a4.053,4.053,0,0,1-1.2,3.028,4.287,4.287,0,0,1-3.028,1.078H9.455a4.287,4.287,0,0,1-3.028-1.078,4.169,4.169,0,0,1-1.12-3.069v-8.5a4.135,4.135,0,0,1,1.12-3.028A4.218,4.218,0,0,1,9.455,6.708H18a4.135,4.135,0,0,1,3.028,1.12,4.28,4.28,0,0,1,1.12,2.986v8.544Z" transform="translate(-3.4 -4.8)" fill="#fff"/>
+                            </g>
+                        </svg></a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/company/eunoia-live"><svg id="Component_296_30" class="enlace-redes w-8" data-name="Component 296 – 30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                            <g id="Ellipse_219" class="circulo-redes" data-name="Ellipse 219" fill="none" stroke="#fff" stroke-width="2">
+                            <circle cx="18" cy="18" r="18" stroke="none"/>
+                            <circle cx="18" cy="18" r="17" fill="none"/>
+                            </g>
+                            <g id="_104493_linkedin_icon" data-name="104493_linkedin_icon" transform="translate(7.714 7.649)">
+                            <path id="Path_3774" data-name="Path 3774" d="M30.042,27.056v-.032l-.021.032Z" transform="translate(-18.98 -17.719)" fill="#fff"/>
+                            <path id="Path_3775" data-name="Path 3775" d="M22.545,4.667H5.014A1.5,1.5,0,0,0,3.494,6.15V23.886a1.5,1.5,0,0,0,1.52,1.483H22.545a1.5,1.5,0,0,0,1.521-1.483V6.15A1.5,1.5,0,0,0,22.545,4.667ZM9.729,22H6.622V12.649H9.729ZM8.176,11.372H8.155A1.619,1.619,0,1,1,8.2,8.142a1.62,1.62,0,1,1-.02,3.23ZM20.933,22H17.826v-5c0-1.256-.45-2.114-1.574-2.114a1.7,1.7,0,0,0-1.595,1.137,2.127,2.127,0,0,0-.1.758V22H11.449s.041-8.472,0-9.348h3.107v1.323a3.085,3.085,0,0,1,2.8-1.544c2.044,0,3.577,1.336,3.577,4.208V22Z" transform="translate(-3.494 -4.667)" fill="#fff"/>
+                            </g>
+                        </svg></a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/studio.eunoia.live"><svg id="Component_296_29" class="enlace-redes w-8" data-name="Component 296 – 29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                                <g id="Ellipse_219" class="circulo-redes" data-name="Ellipse 219" fill="none" stroke="#fff" stroke-width="2">
+                                <circle cx="18" cy="18" r="18" stroke="none"/>
+                                <circle cx="18" cy="18" r="17" fill="none"/>
+                                </g>
+                                <path id="_104498_facebook_icon_1_" data-name="104498_facebook_icon (1)" d="M27.541,12.757H24.285V10.622a.869.869,0,0,1,.906-.989h2.3V6.108L24.325,6.1a4.007,4.007,0,0,0-4.311,4.311v2.35H17.982v3.632h2.031V26.667h4.272V16.389h2.883Z" transform="translate(-4.482 1.616)" fill="#fff"/>
+                        </svg></a>
+
+                        <!-- TikTok -->
+                        <a href="https://vm.tiktok.com/ZMLkqcqKD/"><svg id="Component_296_28" class="enlace-redes w-8" data-name="Component 296 – 28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                            <g id="Ellipse_219" class="circulo-redes" data-name="Ellipse 219" fill="none" stroke="#fff" stroke-width="2">
+                            <circle cx="18" cy="18" r="18" stroke="none"/>
+                            <circle cx="18" cy="18" r="17" fill="none"/>
+                            </g>
+                            <path id="_8547041_tiktok_icon" data-name="8547041_tiktok_icon" d="M18.127,8.436a8.442,8.442,0,0,1-4.934-1.577v7.182A6.533,6.533,0,1,1,7.558,7.568V11.18a3,3,0,1,0,2.1,2.861V0h3.537a4.87,4.87,0,0,0,.075.891h0a4.91,4.91,0,0,0,2.167,3.224,4.88,4.88,0,0,0,2.693.809Z" transform="translate(8.872 7.714)" fill="#fff"/>
+                        </svg></a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/525567912496"><svg id="Component_296_27" class="enlace-redes w-8" data-name="Component 296 – 27" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                            <g id="Ellipse_219" class="circulo-redes" data-name="Ellipse 219" fill="none" stroke="#fff" stroke-width="2">
+                            <circle cx="18" cy="18" r="18" stroke="none"/>
+                            <circle cx="18" cy="18" r="17" fill="none"/>
+                            </g>
+                            <g id="Group_3016" data-name="Group 3016" transform="translate(7.714 7.665)">
+                            <path id="Path_3778" data-name="Path 3778" d="M21.686,6.493A10.245,10.245,0,0,0,5.565,18.852L4.112,24.159l5.43-1.424a10.234,10.234,0,0,0,4.895,1.247h0A10.247,10.247,0,0,0,21.686,6.493ZM14.44,22.252h0A8.5,8.5,0,0,1,10.1,21.065l-.311-.184-3.222.845.86-3.142-.2-.322a8.513,8.513,0,1,1,7.212,3.99Z" transform="translate(-4.112 -3.489)" fill="#fff" fill-rule="evenodd"/>
+                            <path id="Path_3779" data-name="Path 3779" d="M26.31,23.621c-.256-.128-1.514-.747-1.749-.833s-.405-.128-.576.128-.661.833-.81,1-.3.192-.554.064a6.99,6.99,0,0,1-2.058-1.27,7.714,7.714,0,0,1-1.424-1.773c-.149-.256-.016-.395.112-.522s.256-.3.384-.448a1.748,1.748,0,0,0,.256-.427.471.471,0,0,0-.021-.448c-.064-.128-.576-1.388-.789-1.9s-.419-.431-.576-.439-.32-.009-.49-.009a.94.94,0,0,0-.682.32,2.871,2.871,0,0,0-.9,2.135,4.978,4.978,0,0,0,1.045,2.647,11.408,11.408,0,0,0,4.372,3.864,14.694,14.694,0,0,0,1.459.539,3.507,3.507,0,0,0,1.612.1,2.636,2.636,0,0,0,1.727-1.217A2.139,2.139,0,0,0,26.8,23.92C26.737,23.813,26.566,23.749,26.31,23.621Z" transform="translate(-11.312 -11.234)" fill="#fff" fill-rule="evenodd"/>
+                            </g>
+                        </svg></a>
+
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/LiveEunoia"><svg id="Component_296_26" class="enlace-redes w-8" data-name="Component 296 – 26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+                            <g id="Ellipse_219" class="circulo-redes" data-name="Ellipse 219" fill="none" stroke="#fff" stroke-width="2">
+                            <circle cx="18" cy="18" r="18" stroke="none"/>
+                            <circle cx="18" cy="18" r="17" fill="none"/>
+                            </g>
+                            <path id="Path_3780" data-name="Path 3780" d="M24.145,12.3a8.4,8.4,0,0,1-2.424.664,4.228,4.228,0,0,0,1.856-2.335,8.448,8.448,0,0,1-2.68,1.025,4.224,4.224,0,0,0-7.191,3.849,11.983,11.983,0,0,1-8.7-4.41,4.226,4.226,0,0,0,1.306,5.635A4.208,4.208,0,0,1,4.4,16.205c0,.018,0,.035,0,.053A4.224,4.224,0,0,0,7.786,20.4a4.243,4.243,0,0,1-1.112.148,4.182,4.182,0,0,1-.794-.076A4.225,4.225,0,0,0,9.822,23.4a8.516,8.516,0,0,1-6.248,1.748A12,12,0,0,0,22.052,15.036q0-.274-.012-.547A8.548,8.548,0,0,0,24.145,12.3Z" transform="translate(4.14 -0.898)" fill="#fff"/>
+                        </svg></a>                    
+                    </div>
+
+                    <!-- Menú footer -->
+                    <div class="w-full text-sm md:flex md:gap-10 md:justify-start lg:col-start-2 lg:row-start-1 lg:row-span-3 lg:justify-end xl:gap-16 2xl:text-base">
+                        <div>
+                            <p class="accordion active w-full py-3 uppercase text-gris-300 md:text-gris-300 md:w-fit lg:pt-0">Enlaces</p>
+                            <div class="panel mb-4 overflow-hidden md:mb-0 md:flex md:flex-col" style="max-height: fit-content;">
+                                <a href="/" class="inline-block w-full py-2 md:w-fit lg:py-1.5 hover:text-rosa-500">Franquicias</a>
+                                <a href="/" class="inline-block w-full py-2 md:w-fit lg:py-1.5 hover:text-rosa-500">Solicitud de franquicia</a>
+                                <a href="/" class="inline-block w-full py-2 md:w-fit lg:py-1.5 hover:text-rosa-500">Nosotros</a>
+                                <a href="/" class="inline-block w-full py-2 md:w-fit lg:py-1.5 hover:text-rosa-500">Eunoia Play</a>
+                                <a href="/" class="inline-block w-full py-2 md:w-fit lg:py-1.5 hover:text-rosa-500">FAQ</a>
+                                <a href="/" class="inline-block w-full py-2 md:w-fit lg:py-1.5 hover:text-rosa-500">Contacto</a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <p class="accordion w-full py-3 uppercase md:text-gris-300 md:w-fit lg:pt-0">Legal</p>
+                            <div class="panel overflow-hidden md:flex md:flex-col">
+                                <a href="/" class="inline-block w-full py-2 md:w-fit lg:py-1.5 hover:text-rosa-500">Política de privacidad</a>
+                                <a href="/" class="inline-block w-full py-2 md:w-fit lg:py-1.5 hover:text-rosa-500">Política de uso de cookies</a>
+                                <a href="/" class="inline-block w-full py-2 md:w-fit lg:py-1.5 hover:text-rosa-500">Términos y condiciones</a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <p class="accordion w-full py-3 uppercase md:text-gris-300 md:w-fit lg:pt-0">Aplicaciones</p>
+                            <div class="panel overflow-hidden md:flex md:flex-col">
+                                <a href="/" class="inline-block w-full py-2 md:w-fit lg:py-1.5 hover:text-rosa-500">Eunoia Play Android</a>
+                                <a href="/" class="inline-block w-full py-2 md:w-fit lg:py-1.5 hover:text-rosa-500">Eunoia Play iOS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Información de contacto -->
+                    <div class="flex flex-col gap-2 font-serif text-xs text-gris-200 text-center items-center md:self-center lg:col-start-2 lg:gap-1 lg:text-right lg:items-end lg:self-end xl:text-sm">
+                        <p class="w-fit">Anatole France 123, Polanco III Sección, Ciudad de México 11550.</p>
+                        <div class="flex gap-2">
+                            <a href="mailto:contacto@eunoia.live" class="underline hover:text-white">contacto@eunoia.live</a><p>|</p><a href="tel:(+52) 55 6791 2496" class="underline hover:text-white">(+52) 55 6791 2496</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="w-full h-12 bg-gris-800 flex items-center justify-center">
+            <p class="text-xs text-center xl:text-sm">Eunoia Live 2022®. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        const viewportWidth = window.innerWidth;
+        
+        if(viewportWidth < 768){
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("text-gris-300");
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+                panel.classList.toggle("mb-4");
+            });
+            }  
+        }
+    </script>
+</body>
+
+</html>

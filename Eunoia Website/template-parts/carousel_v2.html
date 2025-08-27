@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
+    <style>
+        .swiper-pagination-bullet{
+            display: inline-block;
+            border-radius: 50%;
+            border: solid 1px #fff;
+            background: none;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #fff;
+        }
+        .swiper-button-next, .swiper-button-prev{
+            color: #fff;
+        }
+        /* Degradado del fondo de los slides */
+        .heroBackground{
+            background: rgb(16,21,29); background: linear-gradient(90deg, rgba(16,21,29,1) 0%, rgba(16,21,29,0.4) 84%);
+        }
+        @media only screen and (min-width: 1024px){
+            .heroBackground{
+                background: rgb(16,21,29); background: linear-gradient(90deg, rgba(16,21,29,1) 0%, rgba(16,21,29,0.1) 84%);
+            }
+            .carrusel{
+                height: 768px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Slider main container -->
+    <div class="carrusel h-screen swiper w-full bg-gris-100">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <!-- Contenedor de slide individual -->
+                <img style="z-index: -10;" class="absolute w-full h-full object-cover" src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" />
+                <div class="heroBackground h-full px-6 lg:px-32 grid content-center">
+                    <div class="2xl:container mx-auto lg:mx-0 2xl:mx-auto">
+                    <h2 class="mb-1 text-gris-100 text-xs sm:text-sm uppercase tracking-widest">Etiqueta</h2>
+                    <h1 class="mb-4 text-white uppercase text-3xl sm:text-5xl font-black italic max-w-2xl leading-none">Encabezado 1</h1>
+                    <p class="max-w-2xl text-white font-serif text-base sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque et architecto quam itaque iusto atque quae non. Quasi corrupti consequatur sunt autem molestias magni totam eum quaerat unde repudiandae</p>
+                    
+                    <div class="my-6 flex flex-col sm:flex-row gap-4">
+                        <a href="#" style="min-width: 180px;" class="w-full sm:w-fit px-4 py-3 lg:py-2 rounded-full font-semibold text-sm text-white bg-rosa-500 text-center lowercase">Botón principal</a>
+                        <a href="#" style="min-width: 180px;" class="w-full sm:w-fit px-4 py-3 lg:py-2 rounded-full font-semibold text-sm text-gris-900 bg-white text-center lowercase">Botón secundario</a>
+                    </div>
+                        <p class="max-w-2xl text-white font-serif text-xs sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolorum omnis dolorem odio dolores ipsum incidunt</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <!-- Contenedor de slide individual -->
+                <img style="z-index: -10;" class="absolute w-full h-full object-cover" src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" />
+                <div class="heroBackground h-full px-6 lg:px-32 grid content-center">
+                    <div class="2xl:container mx-auto lg:mx-0 2xl:mx-auto">
+                    <h2 class="mb-1 text-gris-100 text-xs sm:text-sm uppercase tracking-widest">Etiqueta</h2>
+                    <h1 class="mb-4 text-white uppercase text-3xl sm:text-5xl font-black italic max-w-2xl leading-none">Encabezado 2</h1>
+                    <p class="max-w-2xl text-white font-serif text-base sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque et architecto quam itaque iusto atque quae non. Quasi corrupti consequatur sunt autem molestias magni totam eum quaerat unde repudiandae</p>
+                    
+                    <div class="my-6 flex flex-col sm:flex-row gap-4">
+                        <a href="#" style="min-width: 180px;" class="w-full sm:w-fit px-4 py-3 lg:py-2 rounded-full font-semibold text-sm text-white bg-rosa-500 text-center lowercase">Botón principal</a>
+                        <a href="#" style="min-width: 180px;" class="w-full sm:w-fit px-4 py-3 lg:py-2 rounded-full font-semibold text-sm text-gris-900 bg-white text-center lowercase">Botón secundario</a>
+                    </div>
+                        <p class="max-w-2xl text-white font-serif text-xs sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolorum omnis dolorem odio dolores ipsum incidunt</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <!-- Contenedor de slide individual -->
+                <img style="z-index: -10;" class="absolute w-full h-full object-cover" src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" />
+                <div class="heroBackground h-full px-6 lg:px-32 grid content-center">
+                    <div class="2xl:container mx-auto lg:mx-0 2xl:mx-auto">
+                    <h2 class="mb-1 text-gris-100 text-xs sm:text-sm uppercase tracking-widest">Etiqueta</h2>
+                    <h1 class="mb-4 text-white uppercase text-3xl sm:text-5xl font-black italic max-w-2xl leading-none">Encabezado 3</h1>
+                    <p class="max-w-2xl text-white font-serif text-base sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque et architecto quam itaque iusto atque quae non. Quasi corrupti consequatur sunt autem molestias magni totam eum quaerat unde repudiandae</p>
+                    
+                    <div class="my-6 flex flex-col sm:flex-row gap-4">
+                        <a href="#" style="min-width: 180px;" class="w-full sm:w-fit px-4 py-3 lg:py-2 rounded-full font-semibold text-sm text-white bg-rosa-500 text-center lowercase">Botón principal</a>
+                        <a href="#" style="min-width: 180px;" class="w-full sm:w-fit px-4 py-3 lg:py-2 rounded-full font-semibold text-sm text-gris-900 bg-white text-center lowercase">Botón secundario</a>
+                    </div>
+                        <p class="max-w-2xl text-white font-serif text-xs sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolorum omnis dolorem odio dolores ipsum incidunt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="hidden lg:flex swiper-button-prev lg:left-12"></div>
+        <div class="hidden lg:flex swiper-button-next lg:right-12"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+        grabCursor: true,
+        speed: 500,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 10000,
+            disableOnInteraction: false,
+        },
+        });
+    </script>
+</body>
+
+</html>

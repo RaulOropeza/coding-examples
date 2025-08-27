@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
+
+    <style>
+        .enlace-entrada:hover{
+            padding-left: 16px;
+            padding-right: 16px;            
+            justify-content: space-between;
+        }
+
+        .enlace-entrada:hover path{
+            stroke: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero image -->
+    <section class="relative w-full h-52 text-white md:h-60 lg:h-3/4-screen">
+        <img class="-z-10 absolute w-full h-full object-cover" src="images/srudio-eunoia-002.png" alt="">
+        <div class="z-10 w-full h-full px-6 py-8 flex flex-col justify-end bg-gradient-to-t from-gris-950 md:pb-20 lg:px-10 lg:py-16 lg:justify-center">
+            <!-- Contenido -->
+            <div class="w-full max-w-screen-md mx-auto text-center">
+                <h1 class="uppercase order-2 text-4xl font-extrabold leading-tight md:text-5xl xl:text-6xl">Blog Eunoia</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navegación -->
+    <div class="w-full" style="box-shadow: 0px 4px 3px rgb(0 0 0 / 7%);">
+        <!-- Principal -->
+        <nav class="w-full h-auto bg-gris-50">
+            <div class="max-w-screen-2xl mx-auto px-6 pt-2 pb-4 md:flex md:gap-4 md:items-center md:justify-between md:py-2 lg:px-10 xl:px-0 xl:mx-10 2xl:mx-auto">
+                <!-- Categorías -->
+                <div class="swiper swiper-container-1 mb-1 text-gris-950 font-medium md:m-0">
+                    <div class="swiper-wrapper">
+                        <a href="" class="swiper-slide w-fit py-4">Fitness <span class="text-gris-200 font-regular">(1)</span></a>
+                        <a href="" class="swiper-slide w-fit py-4">Wellness <span class="text-gris-200 font-regular">(1)</span></a>
+                        <a href="" class="swiper-slide w-fit py-4">Franquicias <span class="text-gris-200 font-regular">(1)</span></a>
+                        <a href="" class="swiper-slide w-fit py-4">Nutrición <span class="text-gris-200 font-regular">(1)</span></a>
+                    </div>
+                    <div class="z-10 absolute w-8 h-full right-0 top-0 bg-gradient-to-l from-gris-50"></div>
+                </div>
+
+                <!-- Buscador -->
+                <form class="w-full relative md:w-64">
+                    <input type="search" class="w-full rounded-full py-2.5 px-4 font-serif" placeholder="Buscar">
+                    <button class="absolute right-0 h-full px-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18.414" height="18.414" viewBox="0 0 18.414 18.414">
+                            <g id="Group_3048" data-name="Group 3048" transform="translate(1 1)">
+                            <g id="Icon_feather-search" data-name="Icon feather-search">
+                                <path id="Path_3781" data-name="Path 3781" d="M18.722,11.611A7.111,7.111,0,1,1,11.611,4.5,7.111,7.111,0,0,1,18.722,11.611Z" transform="translate(-4.5 -4.5)" fill="none" stroke="#868e96" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                <path id="Path_3782" data-name="Path 3782" d="M28.842,28.842l-3.867-3.867" transform="translate(-12.842 -12.842)" fill="none" stroke="#868e96" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            </g>
+                            </g>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- Secundaria -->
+        <nav class="w-full h-full bg-white">
+            <div class="max-w-screen-2xl relative mx-auto px-6 py-3 flex justify-between gap-4 lg:px-10 xl:px-0 xl:mx-10 2xl:mx-auto">
+                <!-- Etiquetas -->
+                <div class="swiper swiper-container-2 w-full m-0 text-xs text-gris-950 font-medium lg:text-sm">
+                    <div class="swiper-wrapper">
+                        <a href="" class="swiper-slide w-fit py-2 px-6 rounded-full border-2 border-gris-950 transition-colors duration-100 hover:bg-gris-950 hover:text-white">Rutinas</a>
+                        <a href="" class="swiper-slide w-fit py-2 px-6 rounded-full border-2 border-gris-950 transition-colors duration-100 hover:bg-gris-950 hover:text-white">Yoga</a>
+                        <a href="" class="swiper-slide w-fit py-2 px-6 rounded-full border-2 border-gris-950 transition-colors duration-100 hover:bg-gris-950 hover:text-white">Dietas</a>
+                        <a href="" class="swiper-slide w-fit py-2 px-6 rounded-full border-2 border-gris-950 transition-colors duration-100 hover:bg-gris-950 hover:text-white">Bajar de peso</a>
+                    </div>
+                    <div class="z-10 absolute w-16 h-full right-0 top-0 bg-gradient-to-l from-white"></div>
+                </div>
+
+                <button onclick="orderPopup()" class="w-fit bg-white py-2 px-2 flex content-center gap-2 items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12">
+                        <path id="Icon_material-sort" data-name="Icon material-sort" d="M4.5,21h6V19h-6Zm0-12v2h18V9Zm0,7h12V14H4.5Z" transform="translate(-4.5 -9)" fill="#10151d"/>
+                    </svg>
+                    <p class="text-sm font-semibold">Ordenar</p>
+                </button>
+
+                <!-- Popup ordenar -->
+                <div class="ordenar-popup z-20 hidden absolute transition-opacity p-5 bg-white rounded-lg border border-gris-100 flex flex-col gap-3.5 items-start right-6 lg:right-10 xl:right-0">
+                    <button onclick="orderPopup()" class="absolute p-4 right-0 top-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20.953 20.953">
+                            <path id="close" d="M28.477,9.619l-2.1-2.1L18,15.9,9.619,7.523l-2.1,2.1L15.9,18,7.523,26.381l2.1,2.1L18,20.1l8.381,8.381,2.1-2.1L20.1,18Z" transform="translate(-7.523 -7.523)" fill="#252c33"/>
+                        </svg>                            
+                    </button>
+
+                    <p class="font-bold text-gris-950 leading-none">Ordenar por:</p>
+                    <div class="flex flex-col gap-1.5">
+                        <button class="py-1.5 font-medium text-sm text-left">
+                            Fecha: Más reciente
+                        </button>
+                        
+                        <button class="py-1.5 font-medium text-sm text-left">
+                            Fecha: Más antiguo
+                        </button>
+                        
+                        <button class="py-1.5 font-medium text-sm text-left">
+                            Título: A-Z
+                        </button>
+                        
+                        <button class="py-1.5 font-medium text-sm text-left">
+                            Título: Z-A
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Bloque de categoría -->
+    <section class="w-full text-gris-950 px-6 py-8 lg:px-10 lg:py-12">
+        <div class="h-auto max-w-screen-2xl mx-auto">
+            <h2 class="font-bold text-3xl mb-6 lg:text-4xl xl:text-5xl">Fitness</h2>
+
+            <!-- Contenedor de tarjetas de artículo -->
+            <div class="w-full flex flex-col gap-9 lg:grid lg:grid-cols-3 lg:gap-12">
+                <!-- Tarjeta de artículo -->
+                <div class="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-2 xl:gap-4">
+                    <a href="" class="w-full h-52 sm:w-4/5 sm:h-40 md:w-3/5 lg:w-full lg:h-52 xl:h-80">
+                        <img class="w-full h-full object-cover" src="images/srudio-eunoia-002.png">
+                    </a>
+                    
+                    <div class="w-full flex flex-col gap-2 justify-between">
+                        <div class="flex flex-col gap-2 sm:pt-2 lg:gap-2.5">
+                            <div class="flex gap-1.5 items-center text-gris-400 text-sm xl:text-base">
+                                <a href="" class="uppercase">Tema</a><span class="text-xs">|</span><p>Autor</p><span class="text-xs">|</span><p>Mes, Año</p>
+                            </div>
+    
+                            <a href=""><h3 class="text-lg font-bold leading-tight sm:text-xl lg:line-clamp-2 xl:text-2xl">Título de prueba del artículo a dos líneas</h3></a>
+                        </div>
+                        
+                        <!-- Botón -->
+                        <a href="" class="enlace-entrada hidden relative w-full py-3 border-t border-gris-100 font-medium text-sm transition-all sm:flex sm:gap-4 sm:items-center hover:bg-rosa-500 hover:text-white lg:mt-2 xl:text-base">
+                            <p class="w-fit">Leer más</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15.414" viewBox="0 0 15 15.414">
+                                <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(0.5 0.707)">
+                                  <path id="Path_3783" data-name="Path 3783" d="M7.5,18h14" transform="translate(-7.5 -11)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                  <path id="Path_3784" data-name="Path 3784" d="M18,7.5l7,7-7,7" transform="translate(-11 -7.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                            </svg>                              
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de artículo -->
+                <div class="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-2 xl:gap-4">
+                    <a href="" class="w-full h-52 sm:w-4/5 sm:h-40 md:w-3/5 lg:w-full lg:h-52 xl:h-80">
+                        <img class="w-full h-full object-cover" src="images/srudio-eunoia-002.png">
+                    </a>
+                    
+                    <div class="w-full flex flex-col gap-2 justify-between">
+                        <div class="flex flex-col gap-2 sm:pt-2 lg:gap-2.5">
+                            <div class="flex gap-1.5 items-center text-gris-400 text-sm xl:text-base">
+                                <a href="" class="uppercase">Tema</a><span class="text-xs">|</span><p>Autor</p><span class="text-xs">|</span><p>Mes, Año</p>
+                            </div>
+    
+                            <a href=""><h3 class="text-lg font-bold leading-tight sm:text-xl lg:line-clamp-2 xl:text-2xl">Título de prueba del artículo a dos líneas</h3></a>
+                        </div>
+                        
+                        <!-- Botón -->
+                        <a href="" class="enlace-entrada hidden relative w-full py-3 border-t border-gris-100 font-medium text-sm transition-all sm:flex sm:gap-4 sm:items-center hover:bg-rosa-500 hover:text-white lg:mt-2 xl:text-base">
+                            <p class="w-fit">Leer más</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15.414" viewBox="0 0 15 15.414">
+                                <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(0.5 0.707)">
+                                  <path id="Path_3783" data-name="Path 3783" d="M7.5,18h14" transform="translate(-7.5 -11)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                  <path id="Path_3784" data-name="Path 3784" d="M18,7.5l7,7-7,7" transform="translate(-11 -7.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                            </svg>                              
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de artículo -->
+                <div class="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-2 xl:gap-4">
+                    <a href="" class="w-full h-52 sm:w-4/5 sm:h-40 md:w-3/5 lg:w-full lg:h-52 xl:h-80">
+                        <img class="w-full h-full object-cover" src="images/srudio-eunoia-002.png">
+                    </a>
+                    
+                    <div class="w-full flex flex-col gap-2 justify-between">
+                        <div class="flex flex-col gap-2 sm:pt-2 lg:gap-2.5">
+                            <div class="flex gap-1.5 items-center text-gris-400 text-sm xl:text-base">
+                                <a href="" class="uppercase">Tema</a><span class="text-xs">|</span><p>Autor</p><span class="text-xs">|</span><p>Mes, Año</p>
+                            </div>
+    
+                            <a href=""><h3 class="text-lg font-bold leading-tight sm:text-xl lg:line-clamp-2 xl:text-2xl">Título de prueba del artículo a dos líneas</h3></a>
+                        </div>
+                        
+                        <!-- Botón -->
+                        <a href="" class="enlace-entrada hidden relative w-full py-3 border-t border-gris-100 font-medium text-sm transition-all sm:flex sm:gap-4 sm:items-center hover:bg-rosa-500 hover:text-white lg:mt-2 xl:text-base">
+                            <p class="w-fit">Leer más</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15.414" viewBox="0 0 15 15.414">
+                                <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(0.5 0.707)">
+                                  <path id="Path_3783" data-name="Path 3783" d="M7.5,18h14" transform="translate(-7.5 -11)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                  <path id="Path_3784" data-name="Path 3784" d="M18,7.5l7,7-7,7" transform="translate(-11 -7.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                            </svg>                              
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Línea divisora -->
+    <div class="w-full px-6 lg:px-10">
+        <div class="w-full max-w-screen-2xl mx-auto border-b border-gris-100 border-dotted"></div>
+    </div>
+
+    <!-- Bloque de categoría -->
+    <section class="w-full text-gris-950 px-6 py-8 lg:px-10 lg:py-12">
+        <div class="h-auto max-w-screen-2xl mx-auto">
+            <h2 class="font-bold text-3xl mb-6 lg:text-4xl xl:text-5xl">Fitness</h2>
+
+            <!-- Contenedor de tarjetas de artículo -->
+            <div class="w-full flex flex-col gap-9 lg:grid lg:grid-cols-3 lg:gap-12">
+                <!-- Tarjeta de artículo -->
+                <div class="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-2 xl:gap-4">
+                    <a href="" class="w-full h-52 sm:w-4/5 sm:h-40 md:w-3/5 lg:w-full lg:h-52 xl:h-80">
+                        <img class="w-full h-full object-cover" src="images/srudio-eunoia-002.png">
+                    </a>
+                    
+                    <div class="w-full flex flex-col gap-2 justify-between">
+                        <div class="flex flex-col gap-2 sm:pt-2 lg:gap-2.5">
+                            <div class="flex gap-1.5 items-center text-gris-400 text-sm xl:text-base">
+                                <a href="" class="uppercase">Tema</a><span class="text-xs">|</span><p>Autor</p><span class="text-xs">|</span><p>Mes, Año</p>
+                            </div>
+    
+                            <a href=""><h3 class="text-lg font-bold leading-tight sm:text-xl lg:line-clamp-2 xl:text-2xl">Título de prueba del artículo a dos líneas</h3></a>
+                        </div>
+                        
+                        <!-- Botón -->
+                        <a href="" class="enlace-entrada hidden relative w-full py-3 border-t border-gris-100 font-medium text-sm transition-all sm:flex sm:gap-4 sm:items-center hover:bg-rosa-500 hover:text-white lg:mt-2 xl:text-base">
+                            <p class="w-fit">Leer más</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15.414" viewBox="0 0 15 15.414">
+                                <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(0.5 0.707)">
+                                  <path id="Path_3783" data-name="Path 3783" d="M7.5,18h14" transform="translate(-7.5 -11)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                  <path id="Path_3784" data-name="Path 3784" d="M18,7.5l7,7-7,7" transform="translate(-11 -7.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                            </svg>                              
+                        </a>
+                    </div>
+                </div>
+                  <!-- Tarjeta de artículo -->
+                  <div class="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-2 xl:gap-4">
+                    <a href="" class="w-full h-52 sm:w-4/5 sm:h-40 md:w-3/5 lg:w-full lg:h-52 xl:h-80">
+                        <img class="w-full h-full object-cover" src="images/srudio-eunoia-002.png">
+                    </a>
+                    
+                    <div class="w-full flex flex-col gap-2 justify-between">
+                        <div class="flex flex-col gap-2 sm:pt-2 lg:gap-2.5">
+                            <div class="flex gap-1.5 items-center text-gris-400 text-sm xl:text-base">
+                                <a href="" class="uppercase">Tema</a><span class="text-xs">|</span><p>Autor</p><span class="text-xs">|</span><p>Mes, Año</p>
+                            </div>
+    
+                            <a href=""><h3 class="text-lg font-bold leading-tight sm:text-xl lg:line-clamp-2 xl:text-2xl">Título de prueba del artículo a dos líneas</h3></a>
+                        </div>
+                        
+                        <!-- Botón -->
+                        <a href="" class="enlace-entrada hidden relative w-full py-3 border-t border-gris-100 font-medium text-sm transition-all sm:flex sm:gap-4 sm:items-center hover:bg-rosa-500 hover:text-white lg:mt-2 xl:text-base">
+                            <p class="w-fit">Leer más</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15.414" viewBox="0 0 15 15.414">
+                                <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(0.5 0.707)">
+                                  <path id="Path_3783" data-name="Path 3783" d="M7.5,18h14" transform="translate(-7.5 -11)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                  <path id="Path_3784" data-name="Path 3784" d="M18,7.5l7,7-7,7" transform="translate(-11 -7.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                            </svg>                              
+                        </a>
+                    </div>
+                </div>
+                  <!-- Tarjeta de artículo -->
+                  <div class="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-2 xl:gap-4">
+                    <a href="" class="w-full h-52 sm:w-4/5 sm:h-40 md:w-3/5 lg:w-full lg:h-52 xl:h-80">
+                        <img class="w-full h-full object-cover" src="images/srudio-eunoia-002.png">
+                    </a>
+                    
+                    <div class="w-full flex flex-col gap-2 justify-between">
+                        <div class="flex flex-col gap-2 sm:pt-2 lg:gap-2.5">
+                            <div class="flex gap-1.5 items-center text-gris-400 text-sm xl:text-base">
+                                <a href="" class="uppercase">Tema</a><span class="text-xs">|</span><p>Autor</p><span class="text-xs">|</span><p>Mes, Año</p>
+                            </div>
+    
+                            <a href=""><h3 class="text-lg font-bold leading-tight sm:text-xl lg:line-clamp-2 xl:text-2xl">Título de prueba del artículo a dos líneas</h3></a>
+                        </div>
+                        
+                        <!-- Botón -->
+                        <a href="" class="enlace-entrada hidden relative w-full py-3 border-t border-gris-100 font-medium text-sm transition-all sm:flex sm:gap-4 sm:items-center hover:bg-rosa-500 hover:text-white lg:mt-2 xl:text-base">
+                            <p class="w-fit">Leer más</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15.414" viewBox="0 0 15 15.414">
+                                <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(0.5 0.707)">
+                                  <path id="Path_3783" data-name="Path 3783" d="M7.5,18h14" transform="translate(-7.5 -11)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                  <path id="Path_3784" data-name="Path 3784" d="M18,7.5l7,7-7,7" transform="translate(-11 -7.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                            </svg>                              
+                        </a>
+                    </div>
+                </div>
+                  <!-- Tarjeta de artículo -->
+                  <div class="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-2 xl:gap-4">
+                    <a href="" class="w-full h-52 sm:w-4/5 sm:h-40 md:w-3/5 lg:w-full lg:h-52 xl:h-80">
+                        <img class="w-full h-full object-cover" src="images/srudio-eunoia-002.png">
+                    </a>
+                    
+                    <div class="w-full flex flex-col gap-2 justify-between">
+                        <div class="flex flex-col gap-2 sm:pt-2 lg:gap-2.5">
+                            <div class="flex gap-1.5 items-center text-gris-400 text-sm xl:text-base">
+                                <a href="" class="uppercase">Tema</a><span class="text-xs">|</span><p>Autor</p><span class="text-xs">|</span><p>Mes, Año</p>
+                            </div>
+    
+                            <a href=""><h3 class="text-lg font-bold leading-tight sm:text-xl lg:line-clamp-2 xl:text-2xl">Título de prueba del artículo a dos líneas</h3></a>
+                        </div>
+                        
+                        <!-- Botón -->
+                        <a href="" class="enlace-entrada hidden relative w-full py-3 border-t border-gris-100 font-medium text-sm transition-all sm:flex sm:gap-4 sm:items-center hover:bg-rosa-500 hover:text-white lg:mt-2 xl:text-base">
+                            <p class="w-fit">Leer más</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15.414" viewBox="0 0 15 15.414">
+                                <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(0.5 0.707)">
+                                  <path id="Path_3783" data-name="Path 3783" d="M7.5,18h14" transform="translate(-7.5 -11)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                  <path id="Path_3784" data-name="Path 3784" d="M18,7.5l7,7-7,7" transform="translate(-11 -7.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                            </svg>                              
+                        </a>
+                    </div>
+                </div>
+                  <!-- Tarjeta de artículo -->
+                  <div class="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-2 xl:gap-4">
+                    <a href="" class="w-full h-52 sm:w-4/5 sm:h-40 md:w-3/5 lg:w-full lg:h-52 xl:h-80">
+                        <img class="w-full h-full object-cover" src="images/srudio-eunoia-002.png">
+                    </a>
+                    
+                    <div class="w-full flex flex-col gap-2 justify-between">
+                        <div class="flex flex-col gap-2 sm:pt-2 lg:gap-2.5">
+                            <div class="flex gap-1.5 items-center text-gris-400 text-sm xl:text-base">
+                                <a href="" class="uppercase">Tema</a><span class="text-xs">|</span><p>Autor</p><span class="text-xs">|</span><p>Mes, Año</p>
+                            </div>
+    
+                            <a href=""><h3 class="text-lg font-bold leading-tight sm:text-xl lg:line-clamp-2 xl:text-2xl">Título de prueba del artículo a dos líneas</h3></a>
+                        </div>
+                        
+                        <!-- Botón -->
+                        <a href="" class="enlace-entrada hidden relative w-full py-3 border-t border-gris-100 font-medium text-sm transition-all sm:flex sm:gap-4 sm:items-center hover:bg-rosa-500 hover:text-white lg:mt-2 xl:text-base">
+                            <p class="w-fit">Leer más</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15.414" viewBox="0 0 15 15.414">
+                                <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(0.5 0.707)">
+                                  <path id="Path_3783" data-name="Path 3783" d="M7.5,18h14" transform="translate(-7.5 -11)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                  <path id="Path_3784" data-name="Path 3784" d="M18,7.5l7,7-7,7" transform="translate(-11 -7.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                            </svg>                              
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de artículo -->
+                <div class="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-2 xl:gap-4">
+                    <a href="" class="w-full h-52 sm:w-4/5 sm:h-40 md:w-3/5 lg:w-full lg:h-52 xl:h-80">
+                        <img class="w-full h-full object-cover" src="images/srudio-eunoia-002.png">
+                    </a>
+                    
+                    <div class="w-full flex flex-col gap-2 justify-between">
+                        <div class="flex flex-col gap-2 sm:pt-2 lg:gap-2.5">
+                            <div class="flex gap-1.5 items-center text-gris-400 text-sm xl:text-base">
+                                <a href="" class="uppercase">Tema</a><span class="text-xs">|</span><p>Autor</p><span class="text-xs">|</span><p>Mes, Año</p>
+                            </div>
+    
+                            <a href=""><h3 class="text-lg font-bold leading-tight sm:text-xl lg:line-clamp-2 xl:text-2xl">Título de prueba del artículo a dos líneas</h3></a>
+                        </div>
+                        
+                        <!-- Botón -->
+                        <a href="" class="enlace-entrada hidden relative w-full py-3 border-t border-gris-100 font-medium text-sm transition-all sm:flex sm:gap-4 sm:items-center hover:bg-rosa-500 hover:text-white lg:mt-2 xl:text-base">
+                            <p class="w-fit">Leer más</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15.414" viewBox="0 0 15 15.414">
+                                <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(0.5 0.707)">
+                                  <path id="Path_3783" data-name="Path 3783" d="M7.5,18h14" transform="translate(-7.5 -11)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                  <path id="Path_3784" data-name="Path 3784" d="M18,7.5l7,7-7,7" transform="translate(-11 -7.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                            </svg>                              
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de artículo -->
+                <div class="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-2 xl:gap-4">
+                    <a href="" class="w-full h-52 sm:w-4/5 sm:h-40 md:w-3/5 lg:w-full lg:h-52 xl:h-80">
+                        <img class="w-full h-full object-cover" src="images/srudio-eunoia-002.png">
+                    </a>
+                    
+                    <div class="w-full flex flex-col gap-2 justify-between">
+                        <div class="flex flex-col gap-2 sm:pt-2 lg:gap-2.5">
+                            <div class="flex gap-1.5 items-center text-gris-400 text-sm xl:text-base">
+                                <a href="" class="uppercase">Tema</a><span class="text-xs">|</span><p>Autor</p><span class="text-xs">|</span><p>Mes, Año</p>
+                            </div>
+    
+                            <a href=""><h3 class="text-lg font-bold leading-tight sm:text-xl lg:line-clamp-2 xl:text-2xl">Título de prueba del artículo a dos líneas</h3></a>
+                        </div>
+                        
+                        <!-- Botón -->
+                        <a href="" class="enlace-entrada hidden relative w-full py-3 border-t border-gris-100 font-medium text-sm transition-all sm:flex sm:gap-4 sm:items-center hover:bg-rosa-500 hover:text-white lg:mt-2 xl:text-base">
+                            <p class="w-fit">Leer más</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15.414" viewBox="0 0 15 15.414">
+                                <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(0.5 0.707)">
+                                  <path id="Path_3783" data-name="Path 3783" d="M7.5,18h14" transform="translate(-7.5 -11)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                  <path id="Path_3784" data-name="Path 3784" d="M18,7.5l7,7-7,7" transform="translate(-11 -7.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                </g>
+                            </svg>                              
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+        const swiper1 = new Swiper('.swiper-container-1', {
+        direction: 'horizontal',
+        loop: false,
+        grabCursor: true,
+        speed: 400,
+        spaceBetween: 16,
+        slidesOffsetAfter: 32,
+        slidesPerView: 'auto',
+        freeMode: true,
+        autoplay: false,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 768px
+            768: {
+            spaceBetween: 18
+            },
+            // when window width is >= 1280px
+            1280: {
+            spaceBetween: 24
+            },
+        }
+        });
+
+        const swiper2 = new Swiper('.swiper-container-2', {
+        direction: 'horizontal',
+        loop: false,
+        grabCursor: true,
+        speed: 400,
+        spaceBetween: 14,
+        slidesOffsetAfter: 32,
+        slidesPerView: 'auto',
+        freeMode: true,
+        autoplay: false,
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 768px
+            768: {
+            spaceBetween: 16
+            },
+            // when window width is >= 1280px
+            1280: {
+            spaceBetween: 18
+            },
+        }
+        });
+    </script>
+
+    <script>
+        function orderPopup() {
+            let ordenar_popup = document.getElementsByClassName("ordenar-popup");
+            ordenar_popup[0].classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
